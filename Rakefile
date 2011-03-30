@@ -12,7 +12,7 @@ require 'rake'
 require 'jeweler'
 Jeweler::Tasks.new do |gem|
   gem.name = "dm-extjs"
-  gem.homepage = "http://github.com/beezwax/dm-extjs"
+  gem.homepage = "http://github.com/alexgb/dm-extjs"
   gem.license = "MIT"
   gem.summary = %Q{DataMapper plugin for serializing resources to work with ExtJs}
   gem.description = %Q{A DataMapper plugin that will serialize and provide meta data descriptions for resources and collections. Compatible with ExtJS and Sencha Touch}
@@ -20,4 +20,4 @@ Jeweler::Tasks.new do |gem|
   gem.authors = ["Alex Gibbons"]
   gem.add_dependency 'dm-serializer'
 end
-# Jeweler::RubygemsDotOrgTasks.new
+Jeweler::RubygemsDotOrgTasks.new

@@ -41,10 +41,10 @@ end
 
 # include in DM
 module DataMapper
-  Model.append_inclusions(Is::ExtJS::Resource)
-  Model.append_extensions(Is::ExtJS::Model)
+  Model.append_inclusions(ExtJS::Resource)
+  Model.append_extensions(ExtJS::Model)
   
   class Collection
-    include Is::ExtJS::Collection
+    include ExtJS::Collection
   end
 end
