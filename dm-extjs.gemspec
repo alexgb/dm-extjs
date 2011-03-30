@@ -11,17 +11,19 @@ Gem::Specification.new do |s|
   s.authors = ["Alex Gibbons"]
   s.date = %q{2011-03-29}
   s.description = %q{A DataMapper plugin that will serialize and provide meta data descriptions for resources and collections. Compatible with ExtJS and Sencha Touch}
-  s.email = %q{alex.gibbons@gmail.com}
+  s.email = %q{alex.gibbons [a] gmail [dot] com}
   s.extra_rdoc_files = [
     "LICENSE.txt"
   ]
   s.files = [
     ".document",
     "Gemfile",
+    "Gemfile.lock",
     "LICENSE.txt",
     "Rakefile",
     "Readme.md",
     "VERSION",
+    "dm-extjs.gemspec",
     "lib/dm-extjs.rb",
     "lib/dm-extjs/collection.rb",
     "lib/dm-extjs/model.rb",
