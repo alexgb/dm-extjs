@@ -18,6 +18,6 @@ Jeweler::Tasks.new do |gem|
   gem.description = %Q{A DataMapper plugin that will serialize and provide meta data descriptions for resources and collections. Compatible with ExtJS and Sencha Touch}
   gem.email = "alex.gibbons [a] gmail [dot] com"
   gem.authors = ["Alex Gibbons"]
-  gem.add_dependency 'dm-serializer'
+  gem.add_dependency 'dm-serializer, dm-aggregates'
 end
 Jeweler::RubygemsDotOrgTasks.new
