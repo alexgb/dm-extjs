@@ -16,9 +16,7 @@ module DataMapper
       :root =>              'results',
       :successProperty =>   'success',
       :messageProperty =>   'message',
-      :total =>             'total',
-      :start =>             EXT_OFFSET_PARAM,
-      :limit =>             EXT_LIMIT_PARAM
+      :totalProperty =>     'total'
     }
     
     DM_PARAM_TRANSLATIONS = {
