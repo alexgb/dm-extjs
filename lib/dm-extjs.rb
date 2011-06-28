@@ -1,4 +1,5 @@
 require 'dm-serializer'
+require 'dm-aggregates'
 
 require File.join(File.dirname(__FILE__), 'dm-extjs', 'collection')
 require File.join(File.dirname(__FILE__), 'dm-extjs', 'resource')
