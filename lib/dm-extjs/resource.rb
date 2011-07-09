@@ -8,7 +8,8 @@ module DataMapper
           :success => options.has_key?(:success) ? options[:success] : (saved? && clean?),
           :message => (ext_errors << (options[:message] || '')).join("\n"),
           :results => self.to_json(options.merge(:to_json => false))
-        }.to_json
+        }
+        options.fetch(:to_json, true) ? ret.to_json : ret
       end
     
       def ext_errors
