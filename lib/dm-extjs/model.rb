@@ -50,18 +50,15 @@ module DataMapper
       # provides property descriptions needed by ext
       def property_description (property) 
         ret = {:name => property.name}
+        ext_type = EXT_TYPE_TRANSLATIONS[property.primitive.to_s] || EXT_TYPE_TRANSLATIONS["String"]
         
-        if property.respond_to?(:custom?) && property.custom?
-          if property.respond_to? :flag_map
-            ret[:type] = EXT_TYPE_TRANSLATIONS["String"][:type]
-          else
-            ret[:type] = property.class.name.split('::').last.downcase
-          end
-        elsif type = EXT_TYPE_TRANSLATIONS[property.primitive.to_s][:type]
-          ret[:type] = type
+        if property.respond_to? :flag_map
+          ret[:type] = EXT_TYPE_TRANSLATIONS["String"][:type]
+        else
+          ret[:type] = ext_type[:type]
         end
-
-        if dateFormat = EXT_TYPE_TRANSLATIONS[property.primitive.to_s][:dateFormat]
+        
+        if dateFormat = ext_type[:dateFormat]
           ret[:dateFormat] = dateFormat
         end
         ret
