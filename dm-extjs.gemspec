@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{dm-extjs}
-  s.version = "0.1.4"
+  s.version = "0.1.5"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Alex Gibbons"]
-  s.date = %q{2011-07-08}
+  s.date = %q{2011-08-24}
   s.description = %q{A DataMapper plugin that will serialize and provide meta data descriptions for resources and collections. Compatible with ExtJS and Sencha Touch}
   s.email = %q{alex.gibbons [a] gmail [dot] com}
   s.extra_rdoc_files = [
