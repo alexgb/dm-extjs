@@ -13,7 +13,7 @@ module DataMapper
       end
     
       def ext_errors
-        errors.to_a unless !respond_to?(:errors)
+        respond_to?(:errors) ? errors.to_a : []
       end
     
     end
